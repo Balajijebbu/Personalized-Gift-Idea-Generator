@@ -1,0 +1,13 @@
+.giftItem {
+  margin: 5px;
+  width: 30%;
+  transition: box-shadow 0.3s ease;
+}
+
+.giftItem:hover {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.favorite {
+  background-color: #fff9c4 !important;
+}

@@ -1,0 +1,164 @@
+{
+  "gifts": [
+    {
+      "id": 1,
+      "name": "Smartwatch",
+      "price": 199.99,
+      "category": "Tech",
+      "age_group": "adult",
+      "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+      "stock": 50,
+      "rating": 4.7
+    },
+    {
+      "id": 2,
+      "name": "Pen",
+      "price": 79.99,
+      "category": "Stationery",
+      "age_group": "adult",
+      "image": "https://images.unsplash.com/photo-1585336261022-680e295ce3fe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+      "stock": 100,
+      "rating": 4.8
+    },
+    {
+      "id": 3,
+      "name": "Keychain",
+      "price": 15.99,
+      "category": "Accessories",
+      "age_group": "all",
+      "image": "https://images.unsplash.com/photo-1727154085760-134cc942246e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "stock": 200,
+      "rating": 4.5
+    },
+    {
+      "id": 4,
+      "name": "Wireless Headphones",
+      "price": 129.99,
+      "category": "Tech",
+      "age_group": "adult",
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+      "stock": 75,
+      "rating": 4.6
+    },
+    {
+      "id": 5,
+      "name": "Ring",
+      "price": 199.99,
+      "category": "Jewelry",
+      "age_group": "adult",
+      "image": "https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+      "stock": 30,
+      "rating": 4.9
+    },
+    {
+      "id": 6,
+      "name": "Makeup Kit",
+      "price": 89.99,
+      "category": "Beauty",
+      "age_group": "adult",
+      "image": "https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+      "stock": 60,
+      "rating": 4.7
+    },
+    {
+      "id": 7,
+      "name": "Handbag",
+      "price": 149.99,
+      "category": "Fashion",
+      "age_group": "adult",
+      "image": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+      "stock": 40,
+      "rating": 4.8
+    },
+    {
+      "id": 8,
+      "name": "Bag",
+      "price": 99.99,
+      "category": "Fashion",
+      "age_group": "all",
+      "image": "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "stock": 80,
+      "rating": 4.6
+    },
+    {
+      "id": 9,
+      "name": "Robotic Pet Toy",
+      "price": 59.99,
+      "category": "Toys",
+      "age_group": "child",
+      "image": "https://plus.unsplash.com/premium_photo-1740251977093-22bfa19dfefc?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "stock": 100,
+      "rating": 4.4
+    },
+    {
+      "id": 10,
+      "name": "Backpack",
+      "price": 79.99,
+      "category": "Travel",
+      "age_group": "all",
+      "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+      "stock": 90,
+      "rating": 4.5
+    },
+    {
+      "id": 11,
+      "name": "Camping Lantern",
+      "price": 39.99,
+      "category": "Outdoor",
+      "age_group": "all",
+      "image": "https://images.unsplash.com/photo-1570739260082-39a84dae80c8?q=80&w=1934&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "stock": 70,
+      "rating": 4.7
+    },
+    {
+      "id": 12,
+      "name": "Wall Clock",
+      "price": 49.99,
+      "category": "Home Decor",
+      "age_group": "all",
+      "image": "https://images.unsplash.com/photo-1605434181093-608f7914f29b?q=80&w=2111&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "stock": 90,
+      "rating": 4.5
+    },
+    {
+      "id": 13,
+      "name": "Tea cup",
+      "price": 29.99,
+      "category": "Kitchenware",
+      "age_group": "all",
+      "image": "https://images.unsplash.com/photo-1632148188755-caaab35d7ff9?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "stock": 120,
+      "rating": 4.8
+    },
+    {
+      "id": 14,
+      "name": "Smartphone Stand",
+      "price": 19.99,
+      "category": "Accessories",
+      "age_group": "all",
+      "image": "https://images.unsplash.com/photo-1601220363009-f7e66d095649?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "stock": 150,
+      "rating": 4.6
+    },
+    {
+      "id": 15,
+      "name": "Laptop Stand",
+      "price": 34.99,
+      "category": "Accessories",
+      "age_group": "adult",
+      "image": "https://plus.unsplash.com/premium_photo-1683736986821-e4662912a70d?q=80&w=1929&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "stock": 85,
+      "rating": 4.7
+    },
+    {
+      "id": 16,
+      "name": "Bluetooth Headphones",
+      "price": 89.99,
+      "category": "Tech",
+      "age_group": "all",
+      "image": "https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+      "stock": 65,
+      "rating": 4.9
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+.favoriteList {
+  margin-top: 20px;
+}
+
+.favoriteItem {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.favoriteContent {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.favoriteImage {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 15px;
+}
+
+.favoriteDetails {
+  flex-grow: 1;
+}
+
+.noteField {
+  margin-top: 8px;
+  width: 100%;
+}
