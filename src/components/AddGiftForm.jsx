@@ -21,8 +21,10 @@ const AddGiftForm = () => {
     rating: '',
   });
 
+  const [showForm, setShowForm] = useState(false);
+
    if (role !== 'admin') {
-    return null; // Do not render form if not admin
+    return null;
   }
 
 
@@ -58,82 +60,91 @@ const AddGiftForm = () => {
       image: '',
       rating: '',
     });
+    setShowForm(false);
   };
 
   return (
-    <form className={styles.addGiftForm} onSubmit={handleSubmit} style={{ maxWidth: '300px' }}>
-      <Typography variant="h6" gutterBottom>Add a New Gift</Typography>
-      <TextField
-        label="Name"
-        name="name"
-        value={formData.name}
-        onChange={handleChange}
-        required
-        margin="normal"
-        className={styles.selectField}
-      />
-      <TextField
-        label="Price"
-        name="price"
-        type="number"
-        value={formData.price}
-        onChange={handleChange}
-        required
-        margin="normal"
-        className={styles.selectField}
-        inputProps={{ min: 0, step: 0.01 }}
-      />
-      <TextField
-        select
-        label="Category"
-        name="category"
-        value={formData.category}
-        onChange={handleChange}
-        required
-        margin="normal"
-        className={styles.selectField}
-      >
-        {categories.map((option) => (
-          <MenuItem key={option} value={option}>{option}</MenuItem>
-        ))}
-      </TextField>
-      <TextField
-        select
-        label="Age Group"
-        name="age_group"
-        value={formData.age_group}
-        onChange={handleChange}
-        required
-        margin="normal"
-        className={styles.selectField}
-
-      >
-        {ageGroups.map((option) => (
-          <MenuItem key={option} value={option}>{option}</MenuItem>
-        ))}
-      </TextField>
-      <TextField
-        label="Image URL"
-        name="image"
-        value={formData.image}
-        onChange={handleChange}
-        margin="normal"
-        className={styles.selectField}
-      />
-      <TextField
-        label="Rating"
-        name="rating"
-        type="number"
-        value={formData.rating}
-        onChange={handleChange}
-        margin="normal"
-        className={styles.selectField}
-        inputProps={{ min: 0, max: 5, step: 0.1 }}
-      />
-      <Button type="submit" variant="contained" color="primary" className={styles.submitButton}>
-        Add Gift
-      </Button>
-    </form>
+    <>
+      {!showForm && (
+        <Button variant="contained" color="primary" onClick={() => setShowForm(true)} style={{ marginBottom: '15px' }}>
+          Add New Gift
+        </Button>
+      )}
+      {showForm && (
+        <form className={styles.addGiftForm} onSubmit={handleSubmit} style={{ maxWidth: '300px' }}>
+          <Typography variant="h6" gutterBottom>Add a New Gift</Typography>
+          <TextField
+            label="Name"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+            margin="normal"
+            className={styles.selectField}
+          />
+          <TextField
+            label="Price"
+            name="price"
+            type="number"
+            value={formData.price}
+            onChange={handleChange}
+            required
+            margin="normal"
+            className={styles.selectField}
+            inputProps={{ min: 0, step: 0.01 }}
+          />
+          <TextField
+            select
+            label="Category"
+            name="category"
+            value={formData.category}
+            onChange={handleChange}
+            required
+            margin="normal"
+            className={styles.selectField}
+          >
+            {categories.map((option) => (
+              <MenuItem key={option} value={option}>{option}</MenuItem>
+            ))}
+          </TextField>
+          <TextField
+            select
+            label="Age Group"
+            name="age_group"
+            value={formData.age_group}
+            onChange={handleChange}
+            required
+            margin="normal"
+            className={styles.selectField}
+          >
+            {ageGroups.map((option) => (
+              <MenuItem key={option} value={option}>{option}</MenuItem>
+            ))}
+          </TextField>
+          <TextField
+            label="Image URL"
+            name="image"
+            value={formData.image}
+            onChange={handleChange}
+            margin="normal"
+            className={styles.selectField}
+          />
+          <TextField
+            label="Rating"
+            name="rating"
+            type="number"
+            value={formData.rating}
+            onChange={handleChange}
+            margin="normal"
+            className={styles.selectField}
+            inputProps={{ min: 0, max: 5, step: 0.1 }}
+          />
+          <Button type="submit" variant="contained" color="primary" className={styles.submitButton}>
+            Add Gift
+          </Button>
+        </form>
+      )}
+    </>
   );
 };
 
