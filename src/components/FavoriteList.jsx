@@ -68,9 +68,9 @@ const FavoriteList = () => {
                           <Typography variant="subtitle1">{gift.name}</Typography>
                           <Typography variant="body2">Price: ₹{gift.price.toFixed(2)}</Typography>
                           <TextField
-                            label="Notes"
                             variant="outlined"
                             size="small"
+                            placeholder="Notes"
                             multiline
                             rows={2}
                             value={notesState[gift.id]}

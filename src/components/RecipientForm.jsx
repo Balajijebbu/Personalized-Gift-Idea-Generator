@@ -15,7 +15,7 @@ import {
 const interestsOptions = [
   'Books', 'Tech', 'Stationery', 'Accessories', 'Jewelry', 
   'Beauty', 'Fashion', 'Toys', 'Travel', 'Outdoor', 
-  'Home Decor', 'Kitchenware'
+  'Home Decor', 'Kitchenware', 'Fitness'
 ];
 
 const RecipientForm = () => {
@@ -46,9 +46,9 @@ const RecipientForm = () => {
   };
 
   return (
-    <div>
+    <div className={styles.formSectionsContainer}>
       <FormControl component="fieldset" className={styles.formControl}>
-        <FormLabel component="legend">Age Category</FormLabel>
+        <FormLabel component="legend" className={styles.formLabelShift}>Age Category</FormLabel>
         <RadioGroup
           aria-label="age-category"
           name="age-category"
@@ -62,26 +62,28 @@ const RecipientForm = () => {
         </RadioGroup>
       </FormControl>
 
-      <FormControl component="fieldset" className={styles.formControl}>
-        <FormLabel component="legend">Interests</FormLabel>
-        <FormGroup>
-          {interestsOptions.map((interest) => (
-            <FormControlLabel
-              key={interest}
-              control={
-                <Checkbox
-                  checked={localInterests.includes(interest)}
-                  onChange={handleInterestChange}
-                  value={interest}
-                />
-              }
-              label={interest}
-            />
-          ))}
-        </FormGroup>
-      </FormControl>
+        <FormControl component="fieldset" className={styles.formControl}>
+          <FormLabel component="legend" className={styles.formLabelShift}>Interests</FormLabel>
+          <FormGroup className={styles.interestsGroup}>
+            {interestsOptions.map((interest) => (
+              <FormControlLabel
+                key={interest}
+                className={styles.interestLabel}
+                control={
+                  <Checkbox
+                    checked={localInterests.includes(interest)}
+                    onChange={handleInterestChange}
+                    value={interest}
+                  />
+                }
+                label={interest}
+              />
+            ))}
+          </FormGroup>
+        </FormControl>
     </div>
   );
 };
 
 export default RecipientForm;
+

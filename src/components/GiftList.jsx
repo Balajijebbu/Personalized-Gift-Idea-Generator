@@ -22,7 +22,7 @@ const GiftList = () => {
   };
 
   const filterGifts = () => {
-    return allGifts.filter(gift => {
+    let filtered = allGifts.filter(gift => {
       // Filter by age category
       if (ageCategory && ageCategory !== '' && gift.age_group !== 'all' && gift.age_group !== ageCategory) {
         return false;
@@ -37,6 +37,18 @@ const GiftList = () => {
       }
       return true;
     });
+
+    if (interests.includes('Tech') || interests.includes('Fitness')) {
+      const hasSmartwatch = filtered.some(gift => gift.name === 'Smartwatch');
+      if (!hasSmartwatch) {
+        const smartwatch = allGifts.find(gift => gift.name === 'Smartwatch');
+        if (smartwatch) {
+          filtered = [...filtered, smartwatch];
+        }
+      }
+    }
+
+    return filtered;
   };
 
   const filteredGifts = filterGifts();

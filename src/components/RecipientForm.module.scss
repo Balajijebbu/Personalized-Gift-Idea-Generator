@@ -8,3 +8,28 @@
 .formControl {
   margin-bottom: 15px;
 }
+
+.formSectionsContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.formLabelShift {
+  padding-left: 10px;
+}
+
+.interestsGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 15px;
+}
+
+.interestLabel {
+  min-width: 120px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
